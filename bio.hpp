@@ -14,4 +14,10 @@ struct UnrootedTree {
     std::vector<std::variant<Node,Leaf>> verts;
 };
 
+template <typename Node, typename Edge, typename Leaf>
+struct DirectedTree {
+    std::vector<std::vector<std::tuple<int, Edge>>> edge;
+    std::vector<std::variant<Node,Leaf>> verts;
+};
+
 #endif
