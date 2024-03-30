@@ -1,6 +1,9 @@
 #ifndef __MORLOC_BIO_TREE_TREE_TYPES_HPP__
 #define __MORLOC_BIO_TREE_TREE_TYPES_HPP__
 
+#include <variant>
+#include <vector>
+
 template <typename Node, typename Edge, typename Leaf>
 struct RootedTree {
     Node data;
